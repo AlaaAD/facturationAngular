@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">Billing</th>
+    <th scope="col">customerID </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="table-danger"  *ngFor="let f of facture">
+    <td>{{f.billingDate}}</td>
+    <td>{{f.customerID}}</td>
+
+  </tr>
+
+  </tbody>
+</table>

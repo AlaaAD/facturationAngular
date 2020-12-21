@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">NAME</th>
+    <th scope="col">PRICE</th>
+    <th scope="col">QUANTITY</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="table-danger"  *ngFor="let c of products._embedded.products">
+    <td>{{c.id}}</td>
+    <td>{{c.name}}</td>
+    <td>{{c.price}}</td>
+    <td>{{c.quantity}}</td>
+
+  </tr>
+
+  </tbody>
+</table>
